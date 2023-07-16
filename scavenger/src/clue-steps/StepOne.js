@@ -1,10 +1,7 @@
-
-function StepOne() {
+export default function StepOne() {
   return (
     <div>
       Step One
     </div>
   );
 }
-
-export default StepOne;

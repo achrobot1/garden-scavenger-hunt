@@ -1,11 +1,27 @@
 import './App.css';
-import StepOne from './clue-steps/StepOne';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+import {StepOne, StepTwo} from './clue-steps/all-steps';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <StepOne />
+  },
+  {
+    path: "/two",
+    element: <StepTwo />
+  },
+]);
 
 function App() {
   return (
-    <StepOne>
-      Hi
-    </StepOne>
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
