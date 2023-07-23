@@ -15,7 +15,7 @@ import {
   Win
 } from './clue-steps/all-steps';
 
-const router = createBrowserRouter([
+const routerDev = createBrowserRouter([
   { path: "/", element: <StepOne /> },
   { path: "/two", element: <StepTwo /> },
   { path: "/three", element: <StepThree /> },
@@ -24,6 +24,17 @@ const router = createBrowserRouter([
   { path: "/six", element: <StepSix /> },
   { path: "/seven", element: <StepSeven /> },
   { path: "/win", element: <Win /> },
+]);
+
+const router = createBrowserRouter([
+  { path: "/", element: <StepOne /> },
+  { path: "/fehZKsFjbt4=", element: <StepTwo /> },
+  { path: "/GQi7p661xtY=", element: <StepThree /> },
+  { path: "/CxHgr7ub36s=", element: <StepFour /> },
+  { path: "/LO17fcdWaf8=", element: <StepFive /> },
+  { path: "/pnFP4LMjMQQ=", element: <StepSix /> },
+  { path: "/yxo7sXYube4=", element: <StepSeven /> },
+  { path: "/LmJCa50OjJU=", element: <Win /> },
 ]);
 
 function App() {
