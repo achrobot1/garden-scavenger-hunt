@@ -9,6 +9,7 @@ export default function StepSeven() {
   const handleButtonClick = (e) => {
     if (inputText === 'czarna porzeczka') {
       console.log('you win!')
+      document.location = '/win'
     } else {
       setResultText(':(')
     }
