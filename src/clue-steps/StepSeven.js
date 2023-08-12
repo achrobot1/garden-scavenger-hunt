@@ -7,7 +7,7 @@ export default function StepSeven() {
   const [resultText, setResultText] = useState('')
 
   const handleButtonClick = (e) => {
-    if (inputText === 'czarna porzeczka') {
+    if (inputText.toLowerCase().trim() === 'czarna porzeczka') {
       console.log('you win!')
       document.location = '/LmJCa50OjJU='
     } else {
@@ -17,7 +17,7 @@ export default function StepSeven() {
 
   return (
     <div>
-      <img src={clue_7} style={{'width': '100vw'}} />
+      <img src={clue_7}/>
 
       <input type='text' value={inputText} onChange={e => 
       {

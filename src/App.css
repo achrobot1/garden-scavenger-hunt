@@ -1,3 +1,13 @@
 .App {
   text-align: center;
+  padding: 5%;
+}
+
+
+img {
+  width: 90vw;
+}
+
+li {
+  padding-top: 3%;
 }
